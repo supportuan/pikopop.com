@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pikopop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pikopop.css">
+</head>
+<body>
+  <section class="hero">
+    <video class="hero__media" autoplay muted loop playsinline preload="auto"
+           poster="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261008_131819_f6c1a554-6417-497f-a8b7-585449018c39.png">
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20261008_131936_fe93478c-8802-4266-a258-b4f95767462c.mp4" type="video/mp4">
+    </video>
+
+    <header class="nav" id="nav">
+      <a class="nav__logo" href="#" aria-label="pikopop home">
+        <svg viewBox="0 0 22 22" aria-hidden="true">
+          <path fill="#050505" d="M0 0Q5.5 4.6 7 2.6Q11-1.6 15 2.6Q16.500 4.6 22 0V22Q16.500 17.400 15 19.400Q11 23.600 7 19.400Q5.500 17.400 0 22Z"/>
+          <path fill="#ececea" d="M5.800 6.600Q6.500 10.300 10.200 11Q6.500 11.700 5.800 15.400Q5.100 11.700 1.400 11Q5.100 10.300 5.800 6.600ZM16.200 6.600Q16.900 10.300 20.600 11Q16.900 11.700 16.200 15.400Q15.500 11.700 11.800 11Q15.500 10.300 16.200 6.600Z"/>
+        </svg>
+      </a>
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features">Skillset</a></li>
+        <li><a href="#how-it-works">Daily Rhythm</a></li>
+        <li><a href="#pricing">Members</a></li>
+        <li><a href="#about">Story</a></li>
+        <li><a href="#contact">Support</a></li>
+      </ul>
+    </header>
+
+    <h1 class="hero__title">
+      <span class="sr-only">pikopop</span>
+      <svg viewBox="0 0 212 46" shape-rendering="crispEdges" aria-hidden="true"><path d="M0 9h16v4h-16zM0 13h4v4h-4zM16 13h4v4h-4zM0 17h4v4h-4zM16 17h4v4h-4zM0 21h16v4h-16zM0 25h4v4h-4zM0 29h4v4h-4zM0 33h4v4h-4zM32 9h20v4h-20zM40 13h4v4h-4zM40 17h4v4h-4zM40 21h4v4h-4zM40 25h4v4h-4zM40 29h4v4h-4zM32 33h20v4h-20zM64 9h4v4h-4zM80 9h4v4h-4zM64 13h4v4h-4zM76 13h4v4h-4zM64 17h4v4h-4zM72 17h4v4h-4zM64 21h8v4h-8zM64 25h4v4h-4zM72 25h4v4h-4zM64 29h4v4h-4zM76 29h4v4h-4zM64 33h4v4h-4zM80 33h4v4h-4zM100 9h12v4h-12zM96 13h4v4h-4zM112 13h4v4h-4zM96 17h4v4h-4zM112 17h4v4h-4zM96 21h4v4h-4zM112 21h4v4h-4zM96 25h4v4h-4zM112 25h4v4h-4zM96 29h4v4h-4zM112 29h4v4h-4zM100 33h12v4h-12zM128 9h16v4h-16zM128 13h4v4h-4zM144 13h4v4h-4zM128 17h4v4h-4zM144 17h4v4h-4zM128 21h16v4h-16zM128 25h4v4h-4zM128 29h4v4h-4zM128 33h4v4h-4zM164 9h12v4h-12zM160 13h4v4h-4zM176 13h4v4h-4zM160 17h4v4h-4zM176 17h4v4h-4zM160 21h4v4h-4zM176 21h4v4h-4zM160 25h4v4h-4zM176 25h4v4h-4zM160 29h4v4h-4zM176 29h4v4h-4zM164 33h12v4h-12zM192 9h16v4h-16zM192 13h4v4h-4zM208 13h4v4h-4zM192 17h4v4h-4zM208 17h4v4h-4zM192 21h16v4h-16zM192 25h4v4h-4zM192 29h4v4h-4zM192 33h4v4h-4z"/></svg>
+    </h1>
+
+    <p class="bubble" aria-label="pikopop says: 3 bills paid, 1 dinner booked.">
+      Purr! 3 bills paid,<br>1 dinner booked.<span class="bubble__cursor" aria-hidden="true"></span>
+      <svg class="bubble__tail" viewBox="0 0 6 6" shape-rendering="crispEdges" aria-hidden="true"><path fill="#e7e7e7" d="M1 0h4v1h-1v1h-1v1h-1v1h-1z"/><path fill="#050505" d="M0 0h1v5h-1zM1 4h1v1h-1zM2 3h1v1h-1zM3 2h1v1h-1zM4 1h1v1h-1zM5 0h1v1h-1z"/></svg>
+    </p>
+
+    <div class="hero__body">
+      <p class="hero__lede">pikopop naps on your inbox and wakes up to<br> sort plans, reply fast, and guard focus.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#get-started">Try It Free</a>
+        <a class="link" href="#how-it-works">Watch pikopop Think<svg viewBox="0 0 5 8" aria-hidden="true"><path d="M.8.8 4 4 .8 7.200"/></svg></a>
+      </div>
+      <ul class="hero__stats" aria-label="pikopop at a glance">
+        <li>38k inboxes tamed</li>
+        <li>9/10 purrs</li>
+        <li>0 lost tabs</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="pikopop.js" defer></script>
+</body>
+</html>
